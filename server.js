@@ -21,10 +21,14 @@ mongoose
 
 // ৪. রাউটগুলো ইমপোর্ট করা
 const authRoutes = require("./routes/authRoutes");
+const serviceRoutes = require("./routes/serviceRoutes");
+const subscriptionRoutes = require("./routes/subscriptionRoutes");
 // (ভবিষ্যতে সাবস্ক্রিপশন রাউট এখানে আসবে)
 
 // ৫. রাউট ব্যবহার করা
 app.use("/api/auth", authRoutes);
+app.use("/api/services", serviceRoutes);
+app.use("/api/subscriptions", subscriptionRoutes);
 
 // বেসিক রাউট (টেস্টিংয়ের জন্য)
 app.get("/", (req, res) => {

@@ -32,7 +32,7 @@ app.use("/api/subscriptions", subscriptionRoutes);
 
 // বেসিক রাউট (টেস্টিংয়ের জন্য)
 app.get("/", (req, res) => {
-  res.send("🚀 SubTrack Backend is Running Perfectly!");
+  res.send("🚀 Track Management Backend is Running Perfectly!");
 });
 
 // ৬. সার্ভার চালু করা
